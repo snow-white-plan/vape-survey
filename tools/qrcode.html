@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>問卷 QR Code 產生器</title>
+  <style>
+    body { margin: 0; padding: 24px 16px; background: #f5f7f8; color: #1f2933; font-family: -apple-system, "Segoe UI", "Noto Sans TC", "Microsoft JhengHei", sans-serif; }
+    main { max-width: 520px; margin: 0 auto; }
+    label { display: block; margin: 16px 0 6px; font-weight: 600; }
+    input, select { width: 100%; box-sizing: border-box; padding: 10px 12px; font: inherit; border: 1px solid #d6dde1; border-radius: 8px; }
+    button { margin-top: 20px; padding: 12px 20px; font: inherit; font-weight: 700; color: #fff; background: #0f766e; border: none; border-radius: 999px; cursor: pointer; }
+    #out { margin-top: 24px; text-align: center; }
+    #qr { display: inline-block; padding: 16px; background: #fff; }
+    #link { word-break: break-all; color: #5b6770; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>問卷 QR Code 產生器</h1>
+    <label for="base">問卷網址</label>
+    <input id="base" placeholder="https://帳號.github.io/repo/">
+    <label for="session">場次代碼（可留空，留空即為單一 QR Code）</label>
+    <input id="session" placeholder="例如 demo-booth">
+    <label for="lang">語言</label>
+    <select id="lang"><option value="">中文（預設）</option><option value="en">English</option></select>
+    <button id="go" type="button">產生 QR Code</button>
+    <div id="out" hidden>
+      <div id="qr"></div>
+      <p id="link"></p>
+      <button id="dl" type="button">下載 PNG</button>
+    </div>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script>
+    const base = document.getElementById("base");
+    const session = document.getElementById("session");
+    base.value = location.href.replace(/tools\/qrcode\.html.*$/, "");
+    let current = "";
+    document.getElementById("go").addEventListener("click", () => {
+      const u = new URL(base.value.trim());
+      const s = session.value.trim();
+      if (s) u.searchParams.set("s", s); else u.searchParams.delete("s");
+      const l = document.getElementById("lang").value;
+      if (l) u.searchParams.set("lang", l); else u.searchParams.delete("lang");
+      current = u.toString();
+      const box = document.getElementById("qr");
+      box.innerHTML = "";
+      new QRCode(box, { text: current, width: 320, height: 320, correctLevel: QRCode.CorrectLevel.M });
+      document.getElementById("link").textContent = current;
+      document.getElementById("out").hidden = false;
+    });
+    document.getElementById("dl").addEventListener("click", () => {
+      const img = document.querySelector("#qr img");
+      const canvas = document.querySelector("#qr canvas");
+      const a = document.createElement("a");
+      a.href = canvas ? canvas.toDataURL("image/png") : img.src;
+      a.download = `survey-qr${session.value.trim() ? "-" + session.value.trim() : ""}${document.getElementById("lang").value ? "-en" : ""}.png`;
+      a.click();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,792 @@
+{
+  "questions": [
+    {
+      "id": "hA",
+      "page": 1,
+      "prepost": false,
+      "type": "heading",
+      "option_set": "",
+      "required": false,
+      "min": "",
+      "max": "",
+      "zh_text": "A. 基本資料",
+      "en_text": "A. Participant Profile",
+      "hint_zh": "",
+      "hint_en": "",
+      "unit_zh": "",
+      "unit_en": "",
+      "correct_answer": "",
+      "reveal": false,
+      "explain_zh": "",
+      "explain_en": "",
+      "order": 1,
+      "active": true
+    },
+    {
+      "id": "A1",
+      "page": 1,
+      "prepost": false,
+      "type": "single",
+      "option_set": "channel",
+      "required": true,
+      "min": "",
+      "max": "",
+      "zh_text": "A1. 請問您主要透過何種管道得知本次電子煙衛教活動？（請選一項）",
+      "en_text": "A1. What was the main way you learned about this e-cigarette education activity? (Choose one)",
+      "hint_zh": "",
+      "hint_en": "",
+      "unit_zh": "",
+      "unit_en": "",
+      "correct_answer": "",
+      "reveal": false,
+      "explain_zh": "",
+      "explain_en": "",
+      "order": 2,
+      "active": true
+    },
+    {
+      "id": "A2",
+      "page": 1,
+      "prepost": false,
+      "type": "single",
+      "option_set": "role",
+      "required": true,
+      "min": "",
+      "max": "",
+      "zh_text": "A2. 您目前的身分？",
+      "en_text": "A2. What is your role?",
+      "hint_zh": "",
+      "hint_en": "",
+      "unit_zh": "",
+      "unit_en": "",
+      "correct_answer": "",
+      "reveal": false,
+      "explain_zh": "",
+      "explain_en": "",
+      "order": 3,
+      "active": true
+    },
+    {
+      "id": "A3",
+      "page": 1,
+      "prepost": false,
+      "type": "number",
+      "option_set": "",
+      "required": true,
+      "min": 6,
+      "max": 100,
+      "zh_text": "A3. 您的實際年齡？（實歲）",
+      "en_text": "A3. How old are you? (completed years)",
+      "hint_zh": "",
+      "hint_en": "",
+      "unit_zh": "歲",
+      "unit_en": "years",
+      "correct_answer": "",
+      "reveal": false,
+      "explain_zh": "",
+      "explain_en": "",
+      "order": 4,
+      "active": true
+    },
+    {
+      "id": "A4",
+      "page": 1,
+      "prepost": false,
+      "type": "single",
+      "option_set": "gender",
+      "required": false,
+      "min": "",
+      "max": "",
+      "zh_text": "A4. 您的性別？",
+      "en_text": "A4. Gender (optional)",
+      "hint_zh": "",
+      "hint_en": "",
+      "unit_zh": "",
+      "unit_en": "",
+      "correct_answer": "",
+      "reveal": false,
+      "explain_zh": "",
+      "explain_en": "",
+      "order": 5,
+      "active": true
+    },
+    {
+      "id": "A5",
+      "page": 1,
+      "prepost": false,
+      "type": "single",
+      "option_set": "use",
+      "required": false,
+      "min": "",
+      "max": "",
+      "zh_text": "A5. 您是否曾經使用電子煙？",
+      "en_text": "A5. Have you ever used e-cigarettes? (optional)",
+      "hint_zh": "",
+      "hint_en": "",
+      "unit_zh": "",
+      "unit_en": "",
+      "correct_answer": "",
+      "reveal": false,
+      "explain_zh": "",
+      "explain_en": "",
+      "order": 6,
+      "active": true
+    },
+    {
+      "id": "hB",
+      "page": 1,
+      "prepost": false,
+      "type": "heading",
+      "option_set": "",
+      "required": false,
+      "min": "",
+      "max": "",
+      "zh_text": "B. 基本認知",
+      "en_text": "B. Basic Product Knowledge",
+      "hint_zh": "",
+      "hint_en": "",
+      "unit_zh": "",
+      "unit_en": "",
+      "correct_answer": "",
+      "reveal": false,
+      "explain_zh": "",
+      "explain_en": "",
+      "order": 7,
+      "active": true
+    },
+    {
+      "id": "B1",
+      "page": 1,
+      "prepost": false,
+      "type": "single",
+      "option_set": "b1",
+      "required": true,
+      "min": "",
+      "max": "",
+      "zh_text": "B1. 下列何者正確描述電子煙與加熱菸的差異？",
+      "en_text": "B1. Which statement correctly describes the difference between e-cigarettes and heated tobacco products?",
+      "hint_zh": "",
+      "hint_en": "",
+      "unit_zh": "",
+      "unit_en": "",
+      "correct_answer": "B",
+      "reveal": false,
+      "explain_zh": "",
+      "explain_en": "",
+      "order": 8,
+      "active": true
+    },
+    {
+      "id": "hC",
+      "page": 2,
+      "prepost": true,
+      "type": "heading",
+      "option_set": "",
+      "required": false,
+      "min": "",
+      "max": "",
+      "zh_text": "C. 電子煙危害知識",
+      "en_text": "C. Vaping Knowledge",
+      "hint_zh": "",
+      "hint_en": "",
+      "unit_zh": "",
+      "unit_en": "",
+      "correct_answer": "",
+      "reveal": false,
+      "explain_zh": "",
+      "explain_en": "",
+      "order": 1,
+      "active": true
+    },
+    {
+      "id": "K1",
+      "page": 2,
+      "prepost": true,
+      "type": "single",
+      "option_set": "tf",
+      "required": true,
+      "min": "",
+      "max": "",
+      "zh_text": "K1. 電子煙只是水蒸氣，對身體沒有危害？",
+      "en_text": "K1. E-cigarettes produce only water vapor and are harmless to health.",
+      "hint_zh": "",
+      "hint_en": "",
+      "unit_zh": "",
+      "unit_en": "",
+      "correct_answer": "F",
+      "reveal": true,
+      "explain_zh": "電子煙產生的不是單純的水蒸氣，而是含有尼古丁、超細懸浮微粒、重金屬及其他化學物質的氣溶膠，會危害使用者及身旁的人。",
+      "explain_en": "E-cigarettes do not produce just water vapor. Their aerosol can contain nicotine, ultrafine particles, heavy metals and other chemicals that can harm users and people nearby.",
+      "order": 2,
+      "active": true
+    },
+    {
+      "id": "hD",
+      "page": 2,
+      "prepost": true,
+      "type": "heading",
+      "option_set": "",
+      "required": false,
+      "min": "",
+      "max": "",
+      "zh_text": "D. 健康信念\n請選最符合您看法的選項：1 非常不同意／2 不同意／3 普通／4 同意／5 非常同意。",
+      "en_text": "D. Health Beliefs\nSelect the response closest to your view: 1 Strongly disagree / 2 Disagree / 3 Neither agree nor disagree / 4 Agree / 5 Strongly agree.",
+      "hint_zh": "",
+      "hint_en": "",
+      "unit_zh": "",
+      "unit_en": "",
+      "correct_answer": "",
+      "reveal": false,
+      "explain_zh": "",
+      "explain_en": "",
+      "order": 3,
+      "active": true
+    },
+    {
+      "id": "H1",
+      "page": 2,
+      "prepost": true,
+      "type": "single",
+      "option_set": "likert5",
+      "required": true,
+      "min": "",
+      "max": "",
+      "zh_text": "H1. 我覺得自己可能受到電子煙或電子煙二手煙的危害。",
+      "en_text": "H1. I think I could be harmed by e-cigarettes or secondhand e-cigarette aerosol.",
+      "hint_zh": "※ 電子煙二手煙：指旁人使用電子煙時產生的二手氣溶膠。",
+      "hint_en": "Note: secondhand e-cigarette aerosol is the aerosol released when people nearby use e-cigarettes.",
+      "unit_zh": "",
+      "unit_en": "",
+      "correct_answer": "",
+      "reveal": false,
+      "explain_zh": "",
+      "explain_en": "",
+      "order": 4,
+      "active": true
+    },
+    {
+      "id": "H2",
+      "page": 2,
+      "prepost": true,
+      "type": "single",
+      "option_set": "likert5",
+      "required": true,
+      "min": "",
+      "max": "",
+      "zh_text": "H2. 我認為使用電子煙可能對健康造成嚴重傷害。",
+      "en_text": "H2. I believe using e-cigarettes can cause serious harm to health.",
+      "hint_zh": "",
+      "hint_en": "",
+      "unit_zh": "",
+      "unit_en": "",
+      "correct_answer": "",
+      "reveal": false,
+      "explain_zh": "",
+      "explain_en": "",
+      "order": 5,
+      "active": true
+    },
+    {
+      "id": "H3",
+      "page": 2,
+      "prepost": true,
+      "type": "single",
+      "option_set": "likert5",
+      "required": true,
+      "min": "",
+      "max": "",
+      "zh_text": "H3. 我認為遠離電子煙有助於保護自己與家人的健康。",
+      "en_text": "H3. I believe staying away from e-cigarettes helps protect my health and my family's health.",
+      "hint_zh": "",
+      "hint_en": "",
+      "unit_zh": "",
+      "unit_en": "",
+      "correct_answer": "",
+      "reveal": false,
+      "explain_zh": "",
+      "explain_en": "",
+      "order": 6,
+      "active": true
+    },
+    {
+      "id": "H4",
+      "page": 2,
+      "prepost": true,
+      "type": "single",
+      "option_set": "likert5",
+      "required": true,
+      "min": "",
+      "max": "",
+      "zh_text": "H4. 當別人邀請我使用電子煙時，我可能因為不好意思而難以拒絕。",
+      "en_text": "H4. If someone offers me an e-cigarette, I may find it hard to say no because I feel uncomfortable refusing.",
+      "hint_zh": "",
+      "hint_en": "",
+      "unit_zh": "",
+      "unit_en": "",
+      "correct_answer": "",
+      "reveal": false,
+      "explain_zh": "",
+      "explain_en": "",
+      "order": 7,
+      "active": true
+    },
+    {
+      "id": "H5",
+      "page": 2,
+      "prepost": true,
+      "type": "single",
+      "option_set": "likert5",
+      "required": true,
+      "min": "",
+      "max": "",
+      "zh_text": "H5. 即使朋友邀請我使用電子煙，我也有信心拒絕。",
+      "en_text": "H5. Even if a friend offers me an e-cigarette, I am confident I can say no.",
+      "hint_zh": "",
+      "hint_en": "",
+      "unit_zh": "",
+      "unit_en": "",
+      "correct_answer": "",
+      "reveal": false,
+      "explain_zh": "",
+      "explain_en": "",
+      "order": 8,
+      "active": true
+    },
+    {
+      "id": "S1",
+      "page": 4,
+      "prepost": false,
+      "type": "single",
+      "option_set": "useful",
+      "required": true,
+      "min": "",
+      "max": "",
+      "zh_text": "S1. 今天的衛教影片及活動說明，是否有助於您了解電子煙危害及拒絕電子煙的方法？",
+      "en_text": "S1. Did today's video and educational information help you understand vaping risks and ways to refuse e-cigarettes?",
+      "hint_zh": "",
+      "hint_en": "",
+      "unit_zh": "",
+      "unit_en": "",
+      "correct_answer": "",
+      "reveal": false,
+      "explain_zh": "",
+      "explain_en": "",
+      "order": 1,
+      "active": true
+    },
+    {
+      "id": "F1",
+      "page": 5,
+      "prepost": false,
+      "type": "text",
+      "option_set": "",
+      "required": false,
+      "min": "",
+      "max": "",
+      "zh_text": "對本次活動有任何建議或想法嗎？（選填）",
+      "en_text": "Any suggestions or comments about today's activity? (optional)",
+      "hint_zh": "",
+      "hint_en": "",
+      "unit_zh": "",
+      "unit_en": "",
+      "correct_answer": "",
+      "reveal": false,
+      "explain_zh": "",
+      "explain_en": "",
+      "order": 1,
+      "active": true
+    }
+  ],
+  "options": [
+    {
+      "set": "channel",
+      "value": "1",
+      "zh_label": "活動現場宣導攤位",
+      "en_label": "On-site outreach booth",
+      "order": 1,
+      "has_other": false
+    },
+    {
+      "set": "channel",
+      "value": "2",
+      "zh_label": "學校發放宣導單張",
+      "en_label": "Leaflet distributed by school",
+      "order": 2,
+      "has_other": false
+    },
+    {
+      "set": "channel",
+      "value": "3",
+      "zh_label": "衛生所或醫療院所宣導",
+      "en_label": "Health center or healthcare facility",
+      "order": 3,
+      "has_other": false
+    },
+    {
+      "set": "channel",
+      "value": "4",
+      "zh_label": "網路或社群媒體",
+      "en_label": "Website or social media",
+      "order": 4,
+      "has_other": false
+    },
+    {
+      "set": "channel",
+      "value": "5",
+      "zh_label": "其他",
+      "en_label": "Other",
+      "order": 5,
+      "has_other": true
+    },
+    {
+      "set": "role",
+      "value": "1",
+      "zh_label": "國中生",
+      "en_label": "Junior high student",
+      "order": 1,
+      "has_other": false
+    },
+    {
+      "set": "role",
+      "value": "2",
+      "zh_label": "高中職生",
+      "en_label": "Senior high/vocational student",
+      "order": 2,
+      "has_other": false
+    },
+    {
+      "set": "role",
+      "value": "3",
+      "zh_label": "家長／老師",
+      "en_label": "Parent/teacher",
+      "order": 3,
+      "has_other": false
+    },
+    {
+      "set": "role",
+      "value": "4",
+      "zh_label": "職場成人",
+      "en_label": "Working adult",
+      "order": 4,
+      "has_other": false
+    },
+    {
+      "set": "role",
+      "value": "5",
+      "zh_label": "社區民眾／其他",
+      "en_label": "Community member/other",
+      "order": 5,
+      "has_other": false
+    },
+    {
+      "set": "gender",
+      "value": "1",
+      "zh_label": "男",
+      "en_label": "Male",
+      "order": 1,
+      "has_other": false
+    },
+    {
+      "set": "gender",
+      "value": "2",
+      "zh_label": "女",
+      "en_label": "Female",
+      "order": 2,
+      "has_other": false
+    },
+    {
+      "set": "gender",
+      "value": "3",
+      "zh_label": "其他",
+      "en_label": "Other",
+      "order": 3,
+      "has_other": false
+    },
+    {
+      "set": "gender",
+      "value": "9",
+      "zh_label": "不願回答",
+      "en_label": "Prefer not to answer",
+      "order": 4,
+      "has_other": false
+    },
+    {
+      "set": "use",
+      "value": "1",
+      "zh_label": "從未使用",
+      "en_label": "Never",
+      "order": 1,
+      "has_other": false
+    },
+    {
+      "set": "use",
+      "value": "2",
+      "zh_label": "曾使用、目前未使用",
+      "en_label": "Previously, but not currently",
+      "order": 2,
+      "has_other": false
+    },
+    {
+      "set": "use",
+      "value": "3",
+      "zh_label": "目前有使用",
+      "en_label": "Currently use",
+      "order": 3,
+      "has_other": false
+    },
+    {
+      "set": "use",
+      "value": "9",
+      "zh_label": "不願回答",
+      "en_label": "Prefer not to answer",
+      "order": 4,
+      "has_other": false
+    },
+    {
+      "set": "b1",
+      "value": "A",
+      "zh_label": "A. 兩者都是燃燒傳統紙菸來產生煙霧",
+      "en_label": "A. Both burn conventional cigarettes to produce smoke",
+      "order": 1,
+      "has_other": false
+    },
+    {
+      "set": "b1",
+      "value": "B",
+      "zh_label": "B. 電子煙主要加熱煙油產生氣溶膠；加熱菸則加熱菸草製品",
+      "en_label": "B. E-cigarettes generally heat e-liquid to produce aerosol, while heated tobacco products heat tobacco",
+      "order": 2,
+      "has_other": false
+    },
+    {
+      "set": "b1",
+      "value": "C",
+      "zh_label": "C. 兩者都只是產生無害水蒸氣",
+      "en_label": "C. Both produce only harmless water vapor",
+      "order": 3,
+      "has_other": false
+    },
+    {
+      "set": "b1",
+      "value": "D",
+      "zh_label": "D. 不知道",
+      "en_label": "D. Don't know",
+      "order": 4,
+      "has_other": false
+    },
+    {
+      "set": "tf",
+      "value": "T",
+      "zh_label": "對",
+      "en_label": "True",
+      "order": 1,
+      "has_other": false
+    },
+    {
+      "set": "tf",
+      "value": "F",
+      "zh_label": "錯",
+      "en_label": "False",
+      "order": 2,
+      "has_other": false
+    },
+    {
+      "set": "tf",
+      "value": "DK",
+      "zh_label": "不知道",
+      "en_label": "Don't know",
+      "order": 3,
+      "has_other": false
+    },
+    {
+      "set": "likert5",
+      "value": "1",
+      "zh_label": "1 非常不同意",
+      "en_label": "1 Strongly disagree",
+      "order": 1,
+      "has_other": false
+    },
+    {
+      "set": "likert5",
+      "value": "2",
+      "zh_label": "2 不同意",
+      "en_label": "2 Disagree",
+      "order": 2,
+      "has_other": false
+    },
+    {
+      "set": "likert5",
+      "value": "3",
+      "zh_label": "3 普通",
+      "en_label": "3 Neither agree nor disagree",
+      "order": 3,
+      "has_other": false
+    },
+    {
+      "set": "likert5",
+      "value": "4",
+      "zh_label": "4 同意",
+      "en_label": "4 Agree",
+      "order": 4,
+      "has_other": false
+    },
+    {
+      "set": "likert5",
+      "value": "5",
+      "zh_label": "5 非常同意",
+      "en_label": "5 Strongly agree",
+      "order": 5,
+      "has_other": false
+    },
+    {
+      "set": "useful",
+      "value": "4",
+      "zh_label": "非常有幫助",
+      "en_label": "Very helpful",
+      "order": 1,
+      "has_other": false
+    },
+    {
+      "set": "useful",
+      "value": "3",
+      "zh_label": "有幫助",
+      "en_label": "Helpful",
+      "order": 2,
+      "has_other": false
+    },
+    {
+      "set": "useful",
+      "value": "2",
+      "zh_label": "普通",
+      "en_label": "Neutral",
+      "order": 3,
+      "has_other": false
+    },
+    {
+      "set": "useful",
+      "value": "1",
+      "zh_label": "沒有幫助",
+      "en_label": "Not helpful",
+      "order": 4,
+      "has_other": false
+    }
+  ],
+  "settings": [
+    {
+      "key": "questions_version",
+      "value": "2026-10-16-v1"
+    },
+    {
+      "key": "title_zh",
+      "value": "電子煙防制衛教"
+    },
+    {
+      "key": "title_en",
+      "value": "E-cigarette Prevention"
+    },
+    {
+      "key": "consent_zh",
+      "value": "本問卷採匿名填答，不會收集姓名或聯絡方式，資料僅用於衛教成效評估。\n流程約 3–5 分鐘：基本資料 → 前測 → 觀看約 20 秒衛教動畫 → 後測 → 活動回饋。"
+    },
+    {
+      "key": "consent_en",
+      "value": "This survey is anonymous. We do not collect names or contact details, and the data are used only to evaluate this education activity.\nIt takes about 3–5 minutes: profile → pre-test → 20-second video → post-test → feedback."
+    },
+    {
+      "key": "page1_title_zh",
+      "value": "基本資料"
+    },
+    {
+      "key": "page1_title_en",
+      "value": "About you"
+    },
+    {
+      "key": "page2_title_zh",
+      "value": "前測"
+    },
+    {
+      "key": "page2_title_en",
+      "value": "Pre-test"
+    },
+    {
+      "key": "page3_title_zh",
+      "value": "衛教影片"
+    },
+    {
+      "key": "page3_title_en",
+      "value": "Education video"
+    },
+    {
+      "key": "page4_title_zh",
+      "value": "後測"
+    },
+    {
+      "key": "page4_title_en",
+      "value": "Post-test"
+    },
+    {
+      "key": "page5_title_zh",
+      "value": "活動回饋"
+    },
+    {
+      "key": "page5_title_en",
+      "value": "Feedback"
+    },
+    {
+      "key": "page2_intro_zh",
+      "value": "請依您目前的想法作答，沒有標準答案的題目請直覺選擇。"
+    },
+    {
+      "key": "page2_intro_en",
+      "value": "Please answer based on what you think right now."
+    },
+    {
+      "key": "page4_intro_zh",
+      "value": "看完影片後，請再回答一次以下題目。"
+    },
+    {
+      "key": "page4_intro_en",
+      "value": "Now that you have watched the video, please answer these questions again."
+    },
+    {
+      "key": "video_url",
+      "value": "media/video.mp4"
+    },
+    {
+      "key": "video_url_en",
+      "value": ""
+    },
+    {
+      "key": "video_subtitle_zh",
+      "value": ""
+    },
+    {
+      "key": "video_subtitle_en",
+      "value": ""
+    },
+    {
+      "key": "video_poster",
+      "value": ""
+    },
+    {
+      "key": "completion_zh",
+      "value": "完成挑戰！感謝參與電子煙衛教活動。"
+    },
+    {
+      "key": "completion_en",
+      "value": "Challenge complete! Thank you for participating."
+    }
+  ],
+  "sessions": [
+    {
+      "code": "default",
+      "name": "單一 QR Code（未指定場次）",
+      "active": true
+    },
+    {
+      "code": "demo-booth",
+      "name": "範例：活動現場攤位",
+      "active": true
+    }
+  ]
+}
