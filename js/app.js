@@ -462,12 +462,12 @@
             const secs = seconds(state.starts[startKey]);
             if (p === 2) {
               state.preSeconds = secs;
-              const data = { consent: state.answers.consent || "", ...collect(pageItems(1)), ...collect(items), pre_seconds: secs };
+              const data = { consent: state.answers.consent || "", ...collect(pageItems(1)), ...collect(items), pre_duration: secs };
               enqueue("pre", data);
               goTo(3);
             } else {
               state.postSeconds = secs;
-              const data = { video_completed: state.videoCompleted, ...collect(items), post_seconds: secs };
+              const data = { video_completed: state.videoCompleted, ...collect(items), post_duration: secs };
               enqueue("post", data);
               goTo(5);
             }

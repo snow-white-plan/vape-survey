@@ -1,0 +1,21 @@
+﻿id,page,prepost,type,option_set,required,min,max,zh_text,en_text,hint_zh,hint_en,unit_zh,unit_en,correct_answer,reveal,explain_zh,explain_en,order,active
+hA,1,FALSE,heading,,FALSE,,,A. 基本資料,A. Participant Profile,,,,,,FALSE,,,1,TRUE
+A1,1,FALSE,single,channel,TRUE,,,A1. 請問您主要透過何種管道得知本次電子煙衛教活動？（請選一項）,A1. What was the main way you learned about this e-cigarette education activity? (Choose one),,,,,,FALSE,,,2,TRUE
+A2,1,FALSE,single,role,TRUE,,,A2. 您目前的身分？,A2. What is your role?,,,,,,FALSE,,,3,TRUE
+A3,1,FALSE,number,,TRUE,6,100,A3. 您的實際年齡？（實歲）,A3. How old are you? (completed years),,,歲,years,,FALSE,,,4,TRUE
+A4,1,FALSE,single,gender,FALSE,,,A4. 您的性別？,A4. Gender (optional),,,,,,FALSE,,,5,TRUE
+A5,1,FALSE,single,use,FALSE,,,A5. 您是否曾經使用電子煙？,A5. Have you ever used e-cigarettes? (optional),,,,,,FALSE,,,6,TRUE
+hB,1,FALSE,heading,,FALSE,,,B. 基本認知,B. Basic Product Knowledge,,,,,,FALSE,,,7,TRUE
+B1,1,FALSE,single,b1,TRUE,,,B1. 下列何者正確描述電子煙與加熱菸的差異？,B1. Which statement correctly describes the difference between e-cigarettes and heated tobacco products?,,,,,B,FALSE,,,8,TRUE
+hC,2,TRUE,heading,,FALSE,,,C. 電子煙危害知識,C. Vaping Knowledge,,,,,,FALSE,,,1,TRUE
+K1,2,TRUE,single,tf,TRUE,,,K1. 電子煙只是水蒸氣，對身體沒有危害？,K1. E-cigarettes produce only water vapor and are harmless to health.,,,,,F,TRUE,電子煙產生的不是單純的水蒸氣，而是含有尼古丁、超細懸浮微粒、重金屬及其他化學物質的氣溶膠，會危害使用者及身旁的人。,"E-cigarettes do not produce just water vapor. Their aerosol can contain nicotine, ultrafine particles, heavy metals and other chemicals that can harm users and people nearby.",2,TRUE
+hD,2,TRUE,heading,,FALSE,,,"D. 健康信念
+請選最符合您看法的選項：1 非常不同意／2 不同意／3 普通／4 同意／5 非常同意。","D. Health Beliefs
+Select the response closest to your view: 1 Strongly disagree / 2 Disagree / 3 Neither agree nor disagree / 4 Agree / 5 Strongly agree.",,,,,,FALSE,,,3,TRUE
+H1,2,TRUE,single,likert5,TRUE,,,H1. 我覺得自己可能受到電子煙或電子煙二手煙的危害。,H1. I think I could be harmed by e-cigarettes or secondhand e-cigarette aerosol.,※ 電子煙二手煙：指旁人使用電子煙時產生的二手氣溶膠。,Note: secondhand e-cigarette aerosol is the aerosol released when people nearby use e-cigarettes.,,,,FALSE,,,4,TRUE
+H2,2,TRUE,single,likert5,TRUE,,,H2. 我認為使用電子煙可能對健康造成嚴重傷害。,H2. I believe using e-cigarettes can cause serious harm to health.,,,,,,FALSE,,,5,TRUE
+H3,2,TRUE,single,likert5,TRUE,,,H3. 我認為遠離電子煙有助於保護自己與家人的健康。,H3. I believe staying away from e-cigarettes helps protect my health and my family's health.,,,,,,FALSE,,,6,TRUE
+H4,2,TRUE,single,likert5,TRUE,,,H4. 當別人邀請我使用電子煙時，我可能因為不好意思而難以拒絕。,"H4. If someone offers me an e-cigarette, I may find it hard to say no because I feel uncomfortable refusing.",,,,,,FALSE,,,7,TRUE
+H5,2,TRUE,single,likert5,TRUE,,,H5. 即使朋友邀請我使用電子煙，我也有信心拒絕。,"H5. Even if a friend offers me an e-cigarette, I am confident I can say no.",,,,,,FALSE,,,8,TRUE
+S1,4,FALSE,single,useful,TRUE,,,S1. 今天的衛教影片及活動說明，是否有助於您了解電子煙危害及拒絕電子煙的方法？,S1. Did today's video and educational information help you understand vaping risks and ways to refuse e-cigarettes?,,,,,,FALSE,,,1,TRUE
+F1,5,FALSE,text,,FALSE,,,對本次活動有任何建議或想法嗎？（選填）,Any suggestions or comments about today's activity? (optional),,,,,,FALSE,,,1,TRUE

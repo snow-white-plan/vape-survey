@@ -148,12 +148,18 @@ window.SURVEY_CONFIG = {
 
 **分析請用 `merged` 分頁**(一人一列)；`raw` 是原始紀錄，請勿手動修改。
 
+⚠️ `merged` 的**第 2 列是中文欄位說明**，資料從第 3 列開始。匯入 SPSS、R、Excel 樞紐分析前，請先刪除下載檔的第 2 列。
+
 ### 修改 Apps Script(Code.gs)
 
 1. 作答試算表 →「擴充功能 → Apps Script」，修改後儲存。
 2. **「部署 → 管理部署作業」→ 鉛筆圖示 → 版本選「新版本」→ 部署**。
 3. ⚠️ 不要按「新增部署作業」，那會產生新網址，網頁就送不進來了。
 4. 修改後同步更新 repo 裡的 `google-apps-script/Code.gs` 備份。
+
+### 題目試算表換新的時候
+
+`Code.gs` 最上方的 `QUESTIONS_CSV_URL`、`OPTIONS_CSV_URL` 用來讀取題目文字，以產生 `merged` 第 2 列的中文說明，要和 `js/config.js` 的 `questions`、`options` 網址一致。如果重建了題目試算表，兩邊都要更新。讀取失敗時，題目欄的說明會是空白，但資料合併不受影響。
 
 ---
 
@@ -259,23 +265,33 @@ window.SURVEY_CONFIG = {
 
 - `raw`：每次送出一列(前測、後測、回饋各一次)，只新增不修改。
 - `merged`：依匿名配對碼合併成一人一列，**分析與匯出請用此分頁**。每次合併都會整份重建，手動修改會被覆蓋。
+  - 第 1 列：欄位名稱
+  - 第 2 列：中文說明(題目文字、前測或後測、選項代碼、正確答案)，從題目設定試算表自動產生
+  - 第 3 列起：作答資料
 
 ### 主要欄位
 
+依 `merged` 分頁由左到右的順序：
+
 | 欄位 | 說明 |
 |---|---|
-| `pair_id` | 匿名配對碼(同一支手機的前測、後測會是同一個) |
+| `completed_at` | 活動回饋送出時間(伺服器時間)；空白代表沒有填完 |
 | `session` / `session_raw` | 場次 / 網址上的原始場次參數 |
 | `lang` | 作答語言 `zh` / `en` |
 | `questions_version` | 作答時的題目版本 |
+| `consent` | 同意參加(`1` = 已勾選) |
 | `A1`~`A5`、`B1` | 基本資料 |
 | `K1_pre`、`H1_pre`~`H5_pre` | 前測 |
-| `pre_seconds` | 前測作答秒數 |
+| `pre_duration` | 前測作答時長(秒) |
 | `video_completed` | 是否看完影片 |
 | `K1_post`、`H1_post`~`H5_post`、`S1` | 後測 |
-| `post_seconds` | 後測作答秒數 |
+| `post_duration` | 後測作答時長(秒) |
 | `F1` | 活動回饋 |
-| `pre_submitted_at`、`post_submitted_at`、`completed_at` | 各階段送出時間(伺服器時間) |
+| `pre_submitted_at`、`post_submitted_at` | 前測、後測送出時間(伺服器時間) |
+| `pair_id` | 匿名配對碼(同一支手機的前測、後測、回饋會是同一個) |
+| `user_agent` | 填答裝置與瀏覽器資訊 |
+
+> 修改 `merged` 欄位順序：調整 `Code.gs` 最上方的 `LEADING_COLUMNS`(最前面的欄位)與 `TRAILING_COLUMNS`(最後面的欄位)，題目欄位會自動排在中間。
 
 ### 選項代碼
 

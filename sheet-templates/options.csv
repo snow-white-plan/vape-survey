@@ -1,0 +1,35 @@
+﻿set,value,zh_label,en_label,order,has_other
+channel,1,活動現場宣導攤位,On-site outreach booth,1,FALSE
+channel,2,學校發放宣導單張,Leaflet distributed by school,2,FALSE
+channel,3,衛生所或醫療院所宣導,Health center or healthcare facility,3,FALSE
+channel,4,網路或社群媒體,Website or social media,4,FALSE
+channel,5,其他,Other,5,TRUE
+role,1,國中生,Junior high student,1,FALSE
+role,2,高中職生,Senior high/vocational student,2,FALSE
+role,3,家長／老師,Parent/teacher,3,FALSE
+role,4,職場成人,Working adult,4,FALSE
+role,5,社區民眾／其他,Community member/other,5,FALSE
+gender,1,男,Male,1,FALSE
+gender,2,女,Female,2,FALSE
+gender,3,其他,Other,3,FALSE
+gender,9,不願回答,Prefer not to answer,4,FALSE
+use,1,從未使用,Never,1,FALSE
+use,2,曾使用、目前未使用,"Previously, but not currently",2,FALSE
+use,3,目前有使用,Currently use,3,FALSE
+use,9,不願回答,Prefer not to answer,4,FALSE
+b1,A,A. 兩者都是燃燒傳統紙菸來產生煙霧,A. Both burn conventional cigarettes to produce smoke,1,FALSE
+b1,B,B. 電子煙主要加熱煙油產生氣溶膠；加熱菸則加熱菸草製品,"B. E-cigarettes generally heat e-liquid to produce aerosol, while heated tobacco products heat tobacco",2,FALSE
+b1,C,C. 兩者都只是產生無害水蒸氣,C. Both produce only harmless water vapor,3,FALSE
+b1,D,D. 不知道,D. Don't know,4,FALSE
+tf,T,對,True,1,FALSE
+tf,F,錯,False,2,FALSE
+tf,DK,不知道,Don't know,3,FALSE
+likert5,1,1 非常不同意,1 Strongly disagree,1,FALSE
+likert5,2,2 不同意,2 Disagree,2,FALSE
+likert5,3,3 普通,3 Neither agree nor disagree,3,FALSE
+likert5,4,4 同意,4 Agree,4,FALSE
+likert5,5,5 非常同意,5 Strongly agree,5,FALSE
+useful,4,非常有幫助,Very helpful,1,FALSE
+useful,3,有幫助,Helpful,2,FALSE
+useful,2,普通,Neutral,3,FALSE
+useful,1,沒有幫助,Not helpful,4,FALSE

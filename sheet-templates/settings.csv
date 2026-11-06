@@ -1,0 +1,29 @@
+﻿key,value
+questions_version,2026-10-16-v1
+title_zh,電子煙防制衛教
+title_en,E-cigarette Prevention
+consent_zh,"本問卷採匿名填答，不會收集姓名或聯絡方式，資料僅用於衛教成效評估。
+流程約 3–5 分鐘：基本資料 → 前測 → 觀看約 20 秒衛教動畫 → 後測 → 活動回饋。"
+consent_en,"This survey is anonymous. We do not collect names or contact details, and the data are used only to evaluate this education activity.
+It takes about 3–5 minutes: profile → pre-test → 20-second video → post-test → feedback."
+page1_title_zh,基本資料
+page1_title_en,About you
+page2_title_zh,前測
+page2_title_en,Pre-test
+page3_title_zh,衛教影片
+page3_title_en,Education video
+page4_title_zh,後測
+page4_title_en,Post-test
+page5_title_zh,活動回饋
+page5_title_en,Feedback
+page2_intro_zh,請依您目前的想法作答，沒有標準答案的題目請直覺選擇。
+page2_intro_en,Please answer based on what you think right now.
+page4_intro_zh,看完影片後，請再回答一次以下題目。
+page4_intro_en,"Now that you have watched the video, please answer these questions again."
+video_url,media/video.mp4
+video_url_en,
+video_subtitle_zh,
+video_subtitle_en,
+video_poster,
+completion_zh,完成挑戰！感謝參與電子煙衛教活動。
+completion_en,Challenge complete! Thank you for participating.
