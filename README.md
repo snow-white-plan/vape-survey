@@ -55,7 +55,8 @@
 
 | 項目 | 網址 / 名稱 | 擁有者帳號 |
 |---|---|---|
-| 問卷網址(GitHub Pages) | `https://snow-white-plan.github.io/` | |
+| 問卷網址(GitHub Pages) | `https://snow-white-plan.github.io/vape-survey/` | |
+| 問卷網址(QR Code 產生) | `https://snow-white-plan.github.io/vape-survey/tools/qrcode.html` | |
 | GitHub repository | `https://github.com/snow-white-plan` | |
 | 題目設定試算表 | 電子煙問卷-題目設定 | |
 | 作答試算表 | 電子煙問卷-作答資料 | |
