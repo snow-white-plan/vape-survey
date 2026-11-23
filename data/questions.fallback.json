@@ -170,7 +170,7 @@
       "unit_zh": "",
       "unit_en": "",
       "correct_answer": "B",
-      "reveal": false,
+      "reveal": true,
       "explain_zh": "",
       "explain_en": "",
       "order": 8,
@@ -545,24 +545,24 @@
     {
       "set": "b1",
       "value": "A",
-      "zh_label": "A. 兩者都是燃燒傳統紙菸來產生煙霧",
-      "en_label": "A. Both burn conventional cigarettes to produce smoke",
+      "zh_label": "A. 兩者都是**燃燒傳統紙菸**來產生煙霧",
+      "en_label": "A. Both **burn conventional cigarettes** to produce smoke",
       "order": 1,
       "has_other": false
     },
     {
       "set": "b1",
       "value": "B",
-      "zh_label": "B. 電子煙主要加熱煙油產生氣溶膠；加熱菸則加熱菸草製品",
-      "en_label": "B. E-cigarettes generally heat e-liquid to produce aerosol, while heated tobacco products heat tobacco",
+      "zh_label": "B. 電子煙主要**加熱煙油**產生氣溶膠；加熱菸則**加熱菸草製品**",
+      "en_label": "B. E-cigarettes generally **heat e-liquid** to produce aerosol, while heated tobacco products **heat tobacco**",
       "order": 2,
       "has_other": false
     },
     {
       "set": "b1",
       "value": "C",
-      "zh_label": "C. 兩者都只是產生無害水蒸氣",
-      "en_label": "C. Both produce only harmless water vapor",
+      "zh_label": "C. 兩者都只是產生**無害水蒸氣**",
+      "en_label": "C. Both produce only **harmless water vapor**",
       "order": 3,
       "has_other": false
     },

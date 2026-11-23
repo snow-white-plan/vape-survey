@@ -26,6 +26,7 @@
       correctAnswer: "正確答案",
       yourPre: "您的前測答案",
       yourPost: "您的後測答案",
+      yourAnswer: "您的答案",
       noAnswer: "未作答",
       done: "完成",
       restart: "開始新的填答",
@@ -56,6 +57,7 @@
       correctAnswer: "Correct answer",
       yourPre: "Your pre-test answer",
       yourPost: "Your post-test answer",
+      yourAnswer: "Your answer",
       noAnswer: "No answer",
       done: "Finish",
       restart: "Start a new response",
@@ -191,7 +193,18 @@
 
   function optionLabel(q, value) {
     const o = optionsFor(q).find((x) => x.value === value);
-    return o ? txt(o, "label") : "";
+    return o ? plain(txt(o, "label")) : "";
+  }
+
+  function plain(s) {
+    return String(s).replace(/\*\*(.+?)\*\*/g, "$1");
+  }
+
+  function rich(s) {
+    return String(s)
+      .split(/\*\*(.+?)\*\*/g)
+      .map((part, i) => (i % 2 ? el("strong", {}, part) : part))
+      .filter((part) => part !== "");
   }
 
   function setAnswer(key, value) {
@@ -227,8 +240,8 @@
       });
       const text = txt(o, "label");
       const content = isScale
-        ? [el("span", { class: "scale-num" }, o.value), el("span", { class: "scale-text" }, text.replace(/^\d+\s*/, ""))]
-        : [el("span", { class: "dot", "aria-hidden": "true" }), el("span", { class: "opt-text" }, text)];
+        ? [el("span", { class: "scale-num" }, o.value), el("span", { class: "scale-text" }, rich(text.replace(/^\d+\s*/, "")))]
+        : [el("span", { class: "dot", "aria-hidden": "true" }), el("span", { class: "opt-text" }, rich(text))];
       const label = el("label", { class: `opt${isScale ? ` lv${o.value}` : ""}`, for: id }, input, content);
       box.append(label);
       if (o.has_other) {
@@ -238,7 +251,7 @@
           "data-for": o.value,
           maxlength: "100",
           value: state.answers[otherKey] || "",
-          "aria-label": txt(o, "label"),
+          "aria-label": plain(txt(o, "label")),
           oninput: (e) => {
             setAnswer(otherKey, e.target.value);
             clearError(name);
@@ -514,15 +527,13 @@
   }
 
   function renderReveal() {
-    const items = db.questions.filter((q) => q.prepost && q.reveal && q.correct_answer);
+    const items = db.questions.filter((q) => q.reveal && q.correct_answer);
     if (!items.length) return null;
     return el(
       "section",
       { class: "reveal" },
       el("h3", {}, ui().revealTitle),
       items.map((q) => {
-        const pre = state.answers[`${q.id}_pre`];
-        const post = state.answers[`${q.id}_post`];
         const mark = (v) => (v === q.correct_answer ? "✓" : "✗");
         const line = (label, v) =>
           el("li", { class: v === q.correct_answer ? "ok" : "ng" }, `${label}：${v ? optionLabel(q, v) : ui().noAnswer} ${v ? mark(v) : ""}`);
@@ -532,7 +543,13 @@
           el("p", { class: "reveal-q" }, txt(q, "text")),
           el("p", { class: "reveal-a" }, `${ui().correctAnswer}：${optionLabel(q, q.correct_answer)}`),
           txt(q, "explain") ? el("p", { class: "reveal-x" }, txt(q, "explain")) : null,
-          el("ul", {}, line(ui().yourPre, pre), line(ui().yourPost, post))
+          el(
+            "ul",
+            {},
+            q.prepost
+              ? [line(ui().yourPre, state.answers[`${q.id}_pre`]), line(ui().yourPost, state.answers[`${q.id}_post`])]
+              : line(ui().yourAnswer, state.answers[q.id])
+          )
         );
       })
     );

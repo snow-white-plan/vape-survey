@@ -6,7 +6,7 @@ A3,1,FALSE,number,,TRUE,6,100,A3. 您的實際年齡？（實歲）,A3. How old 
 A4,1,FALSE,single,gender,FALSE,,,A4. 您的性別？,A4. Gender (optional),,,,,,FALSE,,,5,TRUE
 A5,1,FALSE,single,use,FALSE,,,A5. 您是否曾經使用電子煙？,A5. Have you ever used e-cigarettes? (optional),,,,,,FALSE,,,6,TRUE
 hB,1,FALSE,heading,,FALSE,,,B. 基本認知,B. Basic Product Knowledge,,,,,,FALSE,,,7,TRUE
-B1,1,FALSE,single,b1,TRUE,,,B1. 下列何者正確描述電子煙與加熱菸的差異？,B1. Which statement correctly describes the difference between e-cigarettes and heated tobacco products?,,,,,B,FALSE,,,8,TRUE
+B1,1,FALSE,single,b1,TRUE,,,B1. 下列何者正確描述電子煙與加熱菸的差異？,B1. Which statement correctly describes the difference between e-cigarettes and heated tobacco products?,,,,,B,TRUE,,,8,TRUE
 hC,2,TRUE,heading,,FALSE,,,C. 電子煙危害知識,C. Vaping Knowledge,,,,,,FALSE,,,1,TRUE
 K1,2,TRUE,single,tf,TRUE,,,K1. 電子煙只是水蒸氣，對身體沒有危害？,K1. E-cigarettes produce only water vapor and are harmless to health.,,,,,F,TRUE,電子煙產生的不是單純的水蒸氣，而是含有尼古丁、超細懸浮微粒、重金屬及其他化學物質的氣溶膠，會危害使用者及身旁的人。,"E-cigarettes do not produce just water vapor. Their aerosol can contain nicotine, ultrafine particles, heavy metals and other chemicals that can harm users and people nearby.",2,TRUE
 hD,2,TRUE,heading,,FALSE,,,"D. 健康信念

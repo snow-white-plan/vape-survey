@@ -17,9 +17,9 @@ use,1,從未使用,Never,1,FALSE
 use,2,曾使用、目前未使用,"Previously, but not currently",2,FALSE
 use,3,目前有使用,Currently use,3,FALSE
 use,9,不願回答,Prefer not to answer,4,FALSE
-b1,A,A. 兩者都是燃燒傳統紙菸來產生煙霧,A. Both burn conventional cigarettes to produce smoke,1,FALSE
-b1,B,B. 電子煙主要加熱煙油產生氣溶膠；加熱菸則加熱菸草製品,"B. E-cigarettes generally heat e-liquid to produce aerosol, while heated tobacco products heat tobacco",2,FALSE
-b1,C,C. 兩者都只是產生無害水蒸氣,C. Both produce only harmless water vapor,3,FALSE
+b1,A,A. 兩者都是**燃燒傳統紙菸**來產生煙霧,A. Both **burn conventional cigarettes** to produce smoke,1,FALSE
+b1,B,B. 電子煙主要**加熱煙油**產生氣溶膠；加熱菸則**加熱菸草製品**,"B. E-cigarettes generally **heat e-liquid** to produce aerosol, while heated tobacco products **heat tobacco**",2,FALSE
+b1,C,C. 兩者都只是產生**無害水蒸氣**,C. Both produce only **harmless water vapor**,3,FALSE
 b1,D,D. 不知道,D. Don't know,4,FALSE
 tf,T,對,True,1,FALSE
 tf,F,錯,False,2,FALSE
