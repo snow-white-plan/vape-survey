@@ -4,6 +4,13 @@
   const QUEUE_KEY = "ecig_survey_queue_v1";
   const TOTAL_PAGES = 5;
   const PAGE_ICONS = ["🙋", "🧠", "🎬", "💪", "💬"];
+  const ART = {
+    snow: "img/snow.webp",
+    witch: "img/witch.webp",
+    dwarfs: "img/dwarfs.webp",
+    mirror: "img/mirror.webp"
+  };
+  const PAGE_ART = { 1: ART.snow, 2: ART.witch };
 
   const UI = {
     zh: {
@@ -387,9 +394,10 @@
       stepper,
       el(
         "div",
-        { class: "page-head" },
+        { class: PAGE_ART[p] ? "page-head has-art" : "page-head" },
         el("span", { class: "page-emoji", "aria-hidden": "true" }, PAGE_ICONS[p - 1]),
-        el("div", {}, el("p", { class: "step" }, ui().step(p)), el("h2", { class: "page-title" }, setting(`page${p}_title`)))
+        el("div", { class: "page-head-text" }, el("p", { class: "step" }, ui().step(p)), el("h2", { class: "page-title" }, setting(`page${p}_title`))),
+        PAGE_ART[p] ? el("img", { class: "page-art", src: PAGE_ART[p], alt: "", "aria-hidden": "true" }) : null
       ),
       setting(`page${p}_intro`) ? el("p", { class: "intro" }, setting(`page${p}_intro`)) : null,
       hasRequired ? el("p", { class: "req-note" }, el("span", { class: "req" }, "*"), ui().requiredNote) : null,
@@ -532,6 +540,7 @@
     return el(
       "section",
       { class: "reveal" },
+      el("img", { class: "reveal-art", src: ART.mirror, alt: "", "aria-hidden": "true" }),
       el("h3", {}, ui().revealTitle),
       items.map((q) => {
         const mark = (v) => (v === q.correct_answer ? "✓" : "✗");
@@ -589,7 +598,7 @@
           { class: "confetti", "aria-hidden": "true" },
           Array.from({ length: 24 }, (_, i) => el("i", { style: `--i:${i};--x:${(i * 37) % 100}%;--d:${(i % 5) * 0.15}s` }))
         ),
-        el("div", { class: "done-icon", "aria-hidden": "true" }, "🏆"),
+        el("img", { class: "done-art", src: ART.dwarfs, alt: "", "aria-hidden": "true" }),
         el("h2", {}, setting("completion")),
         el(
           "button",
