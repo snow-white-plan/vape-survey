@@ -136,9 +136,9 @@ window.SURVEY_CONFIG = {
 
 ### 更換衛教影片
 
-1. 將新影片命名為 `video.mp4`，在 GitHub 的 `media/` 資料夾上傳覆蓋(建議 H.264 編碼、1080p、25 MB 以內；GitHub 單檔上限 100 MB)。
-2. 若檔名不同，修改 `settings` 分頁的 `video_url`。
-3. 英文版影片、字幕(`.vtt`)、封面圖可另外填 `video_url_en`、`video_subtitle_zh/en`、`video_poster`。
+1. 中文版命名為 `video_zh.mp4`、英文版命名為 `video_en.mp4`，在 GitHub 的 `media/` 資料夾上傳覆蓋(建議 H.264 編碼、1080p、25 MB 以內；GitHub 單檔上限 100 MB)。系統會依作答語言自動播放對應影片。
+2. 若檔名不同，修改 `settings` 分頁的 `video_url_zh`、`video_url_en`(留空則使用上述預設檔名)。
+3. 字幕(`.vtt`)、封面圖可另外填 `video_subtitle_zh/en`、`video_poster`。
 
 影片必須完整播完才能進入下一步，播放時無法往後拖曳。
 
@@ -246,7 +246,7 @@ window.SURVEY_CONFIG = {
 | `pageN_title_zh/en`、`pageN_intro_zh/en` | 各頁標題與說明 |
 | `consent_zh/en` | 第一頁的同意說明 |
 | `completion_zh/en` | 完成畫面文字 |
-| `video_url`、`video_url_en` | 影片路徑(英文版可另填) |
+| `video_url_zh`、`video_url_en` | 中文 / 英文影片路徑(留空使用 `media/video_zh.mp4`、`media/video_en.mp4`) |
 | `video_subtitle_zh/en` | 字幕 `.vtt` 路徑 |
 | `video_poster` | 影片封面圖 |
 
@@ -348,7 +348,7 @@ VS Code 安裝 Live Server 擴充套件，在 `index.html` 按右鍵「Open with
 | `merged` 沒有更新 | 手動執行「問卷工具 → 立即合併資料」；若排程消失，執行「問卷工具 → 初始化」重建 |
 | 試算表選單沒有「問卷工具」 | 重新整理試算表頁面 |
 | GitHub Pages 網址 404 | 確認 Pages 已啟用、`index.html` 在 repo 最外層，等 1~3 分鐘 |
-| 影片無法播放 | 確認 `media/video.mp4` 已上傳，且 `settings` 的 `video_url` 路徑一致；影片需為 H.264 編碼 |
+| 影片無法播放 | 確認 `media/video_zh.mp4`、`media/video_en.mp4` 已上傳，且 `settings` 的 `video_url_zh`、`video_url_en` 路徑一致(或留空)；影片需為 H.264 編碼 |
 
 ---
 

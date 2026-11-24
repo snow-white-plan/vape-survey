@@ -749,12 +749,12 @@
       "value": "Now that you have watched the video, please answer these questions again."
     },
     {
-      "key": "video_url",
-      "value": "media/video.mp4"
+      "key": "video_url_zh",
+      "value": "media/video_zh.mp4"
     },
     {
       "key": "video_url_en",
-      "value": ""
+      "value": "media/video_en.mp4"
     },
     {
       "key": "video_subtitle_zh",

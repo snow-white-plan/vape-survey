@@ -509,7 +509,7 @@
       preload: "auto",
       poster: setting("video_poster") || false
     });
-    video.src = setting("video_url");
+    video.src = db.settings[`video_url_${state.lang}`] || `media/video_${state.lang}.mp4`;
     const sub = setting("video_subtitle");
     if (sub) {
       video.append(el("track", { kind: "subtitles", src: sub, srclang: state.lang === "en" ? "en" : "zh-Hant", label: state.lang === "en" ? "English" : "中文", default: true }));
