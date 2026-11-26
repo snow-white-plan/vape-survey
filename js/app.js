@@ -11,6 +11,10 @@
     mirror: "img/mirror.webp"
   };
   const PAGE_ART = { 1: ART.snow, 2: ART.witch };
+  const B1_EXPLAIN_IMG = {
+    zh: "img/B1_explain_zh.png",
+    en: "img/B1_explain_en.png"
+  };
 
   const UI = {
     zh: {
@@ -38,6 +42,7 @@
       done: "完成",
       restart: "開始新的填答",
       restartConfirm: "確定要開始新的填答嗎？",
+      promoAlt: "電子煙三不政策：不嘗試、不購買、不推薦",
       statusPending: (n) => `資料上傳中（${n}）…`,
       statusRetry: (n) => `網路不穩，將自動重試（尚有 ${n} 筆）`,
       statusSaved: "資料已上傳",
@@ -69,6 +74,7 @@
       done: "Finish",
       restart: "Start a new response",
       restartConfirm: "Start a new response?",
+      promoAlt: "Three no's for e-cigarettes: don't try, buy, or recommend",
       statusPending: (n) => `Uploading (${n})…`,
       statusRetry: (n) => `Connection unstable, retrying automatically (${n} left)`,
       statusSaved: "Responses uploaded",
@@ -551,7 +557,8 @@
           { class: "reveal-item" },
           el("p", { class: "reveal-q" }, txt(q, "text")),
           el("p", { class: "reveal-a" }, `${ui().correctAnswer}：${optionLabel(q, q.correct_answer)}`),
-          txt(q, "explain") ? el("p", { class: "reveal-x" }, txt(q, "explain")) : null,
+          q.id !== "B1" && txt(q, "explain") ? el("p", { class: "reveal-x" }, txt(q, "explain")) : null,
+          q.id === "B1" ? el("img", { class: "b1-explain-art", src: B1_EXPLAIN_IMG[state.lang], alt: state.lang === "zh" ? "電子煙與加熱菸的差異" : "Differences between e-cigarettes and heated tobacco products" }) : null,
           el(
             "ul",
             {},
@@ -600,6 +607,11 @@
         ),
         el("img", { class: "done-art", src: ART.dwarfs, alt: "", "aria-hidden": "true" }),
         el("h2", {}, setting("completion")),
+        el(
+          "section",
+          { class: "promo" },
+          el("img", { class: "promo-art", src: "img/principle.png", alt: ui().promoAlt })
+        ),
         el(
           "button",
           {

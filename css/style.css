@@ -664,6 +664,14 @@ body {
   content: "⚠ ";
 }
 
+.b1-explain-art {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 0 10px;
+  border-radius: 12px;
+}
+
 .btn {
   display: block;
   width: 100%;
@@ -879,6 +887,19 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+}
+
+.promo {
+  position: relative;
+  margin: 26px auto 0;
+  max-width: 520px;
+}
+
+.promo-art {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
 
 .done .btn {
